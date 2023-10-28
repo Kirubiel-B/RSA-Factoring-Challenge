@@ -1,22 +1,30 @@
-# RSA-Factoring-Challenge
+<div align="center"><img src="images/rsa_final.gif" width="700" height="300" />
 
-### Problem Statement
+# RSA - factoring challenge
 
-Factorize as many numbers as possible into a product of two smaller numbers.
+We have sniffed an unsecured network and found numbers that are used to encrypt very important documents. It seems that those numbers are not always generated using large enough prime numbers. Your mission should you choose to accept it, is to factorize these numbers as fast as possible before the target fixes this bug on their server - so that we can decode the encrypted documents
 
-### Implementation
+---
 
-Implementing the Pollard Rho algorithm as seen here:
-http://mathforum.org/library/drmath/view/65801.html
+# RESOURCES :books:
 
-### Constraints
+</div>
 
-* No dependencies
-* 5s max to complete calculations
-* Required output: n=(p)(q)
+- [RSA](https://intranet.hbtn.io/rltoken/bkohLbiGqDEExwdQR0bcwA)
+- [How does HTTPS provide security?](https://stackoverflow.com/questions/3968095/how-does-https-provide-security)
+- [Prime Factorization](https://privacycanada.net/mathematics/prime-factorization/)
 
-### Real World Application?
 
-Prime Factorization (or integer factorization) is a commonly used mathematical problem often used to secure public-key encryption systems. A common practice is to use very large semi-primes (that is, the result of the multiplication of two prime numbers) as the number securing the encryption. In order to break it, they would have to find the prime factorization of the large semi-prime number – that is, two or more **prime numbers** that multiplied together result in the original number.
+## USAGE
 
-Source: https://learncryptography.com/mathematics/prime-factorization
+```
+./<script> <Test Case>
+```
+
+## KNOWN ISSUE :adhesive_bandage:
+
+ - Not complete, still working on the task
+
+### AUTHOR
+
+* [Nicks](https://github.com/nickssilver) :smiley_cat:
