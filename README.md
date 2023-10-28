@@ -1,20 +1,22 @@
 # RSA-Factoring-Challenge
 
-## 0. Factorize all the things!
+### Problem Statement
 
 Factorize as many numbers as possible into a product of two smaller numbers.
 
-Usage: factors where is a file containing natural numbers to factor. One number per line You can assume that all lines will be valid natural numbers greater than 1 You can assume that there will be no empy line, and no space before and after the valid number The file will always end with a new line Output format: n=p*q one factorization per line p and q don’t have to be prime numbers See example You can work on the numbers of the file in the order of your choice Your program should run without any dependency: You will not be able to install anything on the machine we will run your program on Time limit: Your program will be killed after 5 seconds if it hasn’t finish Push all your scripts, source code, etc… to your repository we will only run your executable factors
+### Implementation
 
-## 1. RSA Factoring Challenge
+Implementing the Pollard Rho algorithm as seen here:
+http://mathforum.org/library/drmath/view/65801.html
 
-RSA Laboratories states that: for each RSA number n, there exist prime numbers p and q such that
+### Constraints
 
-n = p × q. The problem is to find these two primes, given only n.
+* No dependencies
+* 5s max to complete calculations
+* Required output: n=(p)(q)
 
-This task is the same as task 0, except:
+### Real World Application?
 
-p and q are always prime numbers There is only one number in the files How far can you go in less than 5 seconds?
+Prime Factorization (or integer factorization) is a commonly used mathematical problem often used to secure public-key encryption systems. A common practice is to use very large semi-primes (that is, the result of the multiplication of two prime numbers) as the number securing the encryption. In order to break it, they would have to find the prime factorization of the large semi-prime number – that is, two or more **prime numbers** that multiplied together result in the original number.
 
-## Read: RSA Factoring
-## Author EscoBaite
+Source: https://learncryptography.com/mathematics/prime-factorization
